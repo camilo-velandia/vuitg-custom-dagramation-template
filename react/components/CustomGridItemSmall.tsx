@@ -1,0 +1,18 @@
+import React, {ReactNode} from 'react';
+import styles from './styles.css'
+
+type Props ={
+  elementOne:ReactNode
+  elementTwo:ReactNode
+}
+
+const CustomGridItemSmall = ({elementOne, elementTwo}:Props) => {
+  return (
+    <div className={styles['styles__item--small']}>
+      {elementOne}
+      {elementTwo}
+    </div>
+  );
+};
+
+export default CustomGridItemSmall;
